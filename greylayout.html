@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color:#FAECD6;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color:grey;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background:#FFF6BD;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color:#8EA7E9 ;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color:#D9ACF5;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>welome to google page</h2>
+<p>Google is the leading Internet search engine; its main service provides customers with targeted search outcomes chosen from over 8 billion web pages. </p>
+<p> Google is the most leading internet based search engine company all over the world.</p>
+<p><strong>Note:</strong> A paragraph should represent an independent unit of logic. Restrict each paragraph to the current topic.</p>
+
+<header>
+  <h2>google.com</h2>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png"height="200px"width="300px">
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#"> California</a></li>
+      <li><a href="#">Chicago – Carpenter</a></li>
+      <li><a href="#">Los Angeles, US</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>California</h1>
+    <p>1600 Amphitheatre Parkway
+Mountain View, CA 94043
+United States</p>
+    <p>Large or small, each one of our offices is designed to inspire innovation, big ideas, and community.
+</p>
+  </article>
+</section>
+
+<footer>
+  <p>thank you for visit</p>
+</footer>
+
+</body>
+</html>
+
